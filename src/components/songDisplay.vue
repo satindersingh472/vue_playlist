@@ -16,7 +16,7 @@
         <div class="items"    @click="current_song">
           <h2>Song: {{ song[`title`] }}</h2>
           <h2>Singer: {{ song[`artist`] }}</h2>
-          <p>Song_Id{{ song[`song_id`] }}</p>
+          <p>Song_Id: {{ song[`song_id`] }}</p>
           <img :src="song[`image_url`]" :alt="song[`song_id`]" />
         </div>
       </div>
