@@ -35,9 +35,8 @@ export default {
   methods: {
     // current song will get details[`outerHTML] of clicked items and show them inside ref song playing 
     current_song(details) {
-        if(details[`target`] !== details[`cuurentTarget`]){
         this.$refs[`song_playing`][`innerHTML`] = details[`target`][`parentElement`][`outerHTML`];    
-        }
+        
     }
   },
   data() {
