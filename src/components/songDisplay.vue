@@ -13,8 +13,8 @@
      
       >
       <!-- items div will contain all the information about song in the list and if we click on the div there is an event calling current song function -->
-        <div class="items"    @click="current_song">
-          <h2>Song: {{ song[`title`] }}</h2>
+        <div class="items">
+          <button @click="current_song">Song: {{ song[`title`] }}</button>
           <h2>Singer: {{ song[`artist`] }}</h2>
           <p>Song_Id: {{ song[`song_id`] }}</p>
           <img :src="song[`image_url`]" :alt="song[`song_id`]" />
@@ -25,7 +25,7 @@
       <div class="display_playing">
         <h2>playing song</h2>
         <div ref="song_playing">
-        <h2>you selected song will get displayed here</h2>
+        <h2>your selected song will get displayed here<br>just press the song button with name</h2>
         </div>
       </div>
   </div>
@@ -86,14 +86,14 @@ img {
   display: grid;
   grid-template-columns: auto;
   justify-self: center;
-  padding: 10px 10px 20px 20px;
-  box-shadow: 3px 3px 6px grey;
 }
-.items {
+.items{
     font-size: 1rem;
   display: grid;
   align-items: center;
   justify-items: start;
+   padding: 10px 10px 20px 20px;
+  box-shadow: 3px 3px 6px grey;
 }
 .all{
     display: grid;
