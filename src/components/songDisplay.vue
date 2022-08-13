@@ -24,7 +24,9 @@
     <!-- display playing div will contain the current song -->
       <div class="display_playing">
         <h2>playing song</h2>
-        <div ref="song_playing"></div>
+        <div ref="song_playing">
+        <h2>you selected song will get displayed here</h2>
+        </div>
       </div>
   </div>
 </template>
